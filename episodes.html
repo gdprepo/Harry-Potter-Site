@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<title>Harry Potter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<script>
+    var i = 0;
+    var images = [];
+    var time = 3000;
+  
+    images[0] = './img-episodes/1.jpg';
+    images[1] = './img-episodes/2.jpg';
+    images[2] = './img-episodes/3.jpg';
+    images[3] = './img-episodes/4.jpg';
+    
+  
+    function changeImg(){
+      document.slide.src = images[i];
+  
+      if (i < images.length - 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+  
+      setTimeout("changeImg()", time);
+    }
+  
+    window.onload = changeImg;
+  
+  
+  </script>
+
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Harry</b> Potter</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">Accueil</a>
+        <a href="personnages.html" class="w3-bar-item w3-button">Personnages</a>
+        <a href="#about" class="w3-bar-item w3-button">Episodes</a>
+        <a href="#contact" class="w3-bar-item w3-button">Boutique</a>
+    </div>
+  </div>
+</div>
+<!-- 
+Header
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="./img-page1/1.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Harry</b></span> <span class="w3-hide-small w3-text-light-grey">Potter</span></h1>
+ </div>
+</header> -->
+
+
+<div class="w3-content w3-padding" style="max-width:1564px; margin-top:100px; margin-bottom:50px;">
+  <div class="w3-row-padding">
+    <div style="  border: 30px solid;
+    border-image: linear-gradient(red, yellow) 10;
+    padding: 20px;">
+      <img name="slide" width="400" height="200" style=" max-width:50%; height: 400px; display: block;  margin-left: auto; margin-right: auto;" />
+    </div>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div class="bitmap w3-content w3-padding" style="max-width:1564px">
+
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
