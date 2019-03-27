@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./css/personnage.css">
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -12,10 +14,20 @@
     <a href="index.html" class="w3-bar-item w3-button"><b>Harry</b> Potter</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button">Accueil</a>
-      <a href="personnages.html" class="w3-bar-item w3-button">Personnages</a>
-      <a href="episodes.html" class="w3-bar-item w3-button">Episodes</a>
-      <a href="boutique.html" class="w3-bar-item w3-button">Boutique</a>
+      <a href="index.html" style="margin-left:-350px;" class="w3-bar-item w3-button">Accueil</a>
+      <ul id="menu-vertical" style="margin-left:-220px; margin-bottom: 150px;">
+        <li><a href="personnages.html" class="w3-bar-item w3-button">Personnages</a>
+          <ul>
+            <li><a href="personnages.1.html">Harry Potter</a></li>
+            <li><a href="personnages.2.html">Ron Weasley</a></li>
+            <li><a href="personnages.3.html">Hermione Granger</a></li>
+            <li><a href="personnages.4.html">Albus Dumbeldore</a></li>
+            <li><a href="personnages.5.html">Tom Jedusor</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a href="episodes.html" style="margin-top:-150px; margin-left:150px;" class="w3-bar-item w3-button">Episodes</a>
+      <a href="boutique.html" class="w3-bar-item w3-button" style="margin-right:-150px; margin-top:-150px;">Boutique</a>
     </div>
   </div>
 </div>
