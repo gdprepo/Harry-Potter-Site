@@ -18,10 +18,10 @@
 
 #menu-vertical ul {
     position: absolute;
-    left:-999em;
+    left:-1799em;
 }
 
 #menu-vertical li:hover ul {
     top: 0;
-    left: 180px;
+    left: 172px;
 }
